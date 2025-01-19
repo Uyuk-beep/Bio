@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Clone</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(90deg, #004aad, #08d6ff);
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+        }
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .social-links li {
+            margin: 0;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        .social-links a:hover {
+            background-color: #e6e3e3;
+        }
+        .social-links a .icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/Yukandri.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="name">Yukandri</div>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/yukandri?igsh=dDU0bzFuZGo3MHJq" target="_blank"><i class="icon" data-feather="instagram"></i>Instagram</a></li>
+            <li><a href="http://www.youtube.com/@yukandri575" target="_blank"><i class="icon" data-feather="youtube"></i>Youtube</a></li>
+            <li><a href="https://web.facebook.com/yukandri.uyuk.12/?viewas=100000686899395" target="_blank"><i class="icon" data-feather="facebook"></i>Facebook</a></li>
+        </ul>
+    </div>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
